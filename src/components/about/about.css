@@ -1,0 +1,115 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 54%;
+  gap: 19%;
+}
+
+.about__me {
+  width: 88%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  width: 298px; /* Adjust the width to your desired size */
+  height: 288px; /* Adjust the height to your desired size */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  background-color: rgba(169, 169, 169, 0.692);
+  border: 4px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  border-color: rgb(21, 72, 214);
+  cursor: default;
+  background: scroll;
+}
+
+.about__icon {
+  color: rgb(114, 114, 187);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.994rem;
+}
+
+.about__card small {
+  font-size: 1.1rem;
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: rgb(15, 15, 1);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 3rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+}
+
+h6 {
+  color: rgb(240, 244, 247);
+}
+.btn-primarys{
+  color: #fffcfc;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(2, 5, 15);
+}
